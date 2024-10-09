@@ -1,14 +1,16 @@
 <script>
-  import Users from "./Users.svelte";
-  import Other from './Other.svelte';
+  import Derived from './Derived.svelte';
+  // import Users from "./Users.svelte";
+  // import Other from './Other.svelte';
 
-  let users = true;
-  let other = true;
+  // let users = true;
+  // let other = true;
 
 </script>
 
 <div>
-  <button on:click={()=>users=!users}>Toggle Users</button>
+  <Derived/>
+  <!-- <button on:click={()=>users=!users}>Toggle Users</button>
   <button on:click={()=>other=!other}>Toggle Users</button>
 
   {#if users}
@@ -17,7 +19,7 @@
 
   {#if other}
     <Other/>
-  {/if}
+  {/if} -->
   
 </div>
 
