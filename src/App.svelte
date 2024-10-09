@@ -1,5 +1,6 @@
 <script>
-  import Derived from './Derived.svelte';
+  import Play from './Play.svelte';
+  // import Derived from './Derived.svelte';
   // import Users from "./Users.svelte";
   // import Other from './Other.svelte';
 
@@ -9,7 +10,9 @@
 </script>
 
 <div>
-  <Derived/>
+  <Play/>
+
+  <!-- <Derived/> -->
   <!-- <button on:click={()=>users=!users}>Toggle Users</button>
   <button on:click={()=>other=!other}>Toggle Users</button>
 
