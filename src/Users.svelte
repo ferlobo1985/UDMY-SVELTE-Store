@@ -9,18 +9,9 @@
     onDestroy(()=>{
         counterUnsub();
     })
-
-    function setNewValue(){
-        counter.set(200)
-    }
-
-    function updateValue(){
-        counter.update(prev=>{
-            return prev + 1
-        })
-    }
 </script>
 
 <h3>The counter is: {$counter}</h3>
-<button on:click={setNewValue}>Set new value</button>
-<button on:click={updateValue}>update value</button>
+<button on:click={()=>counter.setNew(200)}>Set new value</button>
+<button on:click={counter.addOne}>update value</button>
+<button on:click={counter.minusOne}>Minus one</button>
